@@ -1,0 +1,139 @@
+
+  .n-audio-player{
+    margin-bottom: 2em;
+  }
+  
+  .controlColorClass{color:#808080}
+  .textColorClass{color:#000}
+  .backColorClass{background-color:#FFF}
+  .sliderColorClass{background-color:#D9D9D9}
+  .progressColorClass{background-color:#808080}
+  
+  .altControlColorClass{color:#FF8080}
+  .altTextColorClass{color:#F00}
+  .altBackColorClass{background-color:#0FF}
+  .altSliderColorClass{background-color:#00D9D9}
+  .altProgressColorClass{background-color:#FF8080}
+  
+  
+
+  .audio-container {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 33em;
+    min-width: 20em;
+    height: 4.6em;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.333em;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .audio-container.tiny{
+    font-size: 6px !important;
+  }
+  .audio-container.tiny .controls {
+    font-family: sans-serif;
+    font-size: 1.66em;
+  }
+  .audio-container.small{
+    font-size: 8px !important;
+  }
+  .audio-container.medium{
+    font-size: 10px !important;
+  }
+  .audio-container.large{
+    font-size: 12px !important;
+  }
+  .audio-container .play-pause-btn {
+    display: none;
+    cursor: pointer;
+    width: 1em;
+  }
+  .audio-container .slider {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+  }
+  .audio-container .slider .progress {
+    border-radius: inherit;
+    position: absolute;
+    pointer-events: none;
+  }
+  .audio-container .slider .progress .pin {
+    height: 1.333em;
+    width: 1.333em;
+    border-radius: 0.667em;
+    position: absolute;
+    pointer-events: all;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+  }
+  .audio-container .controls {
+    font-family: sans-serif;
+    font-size: 1.333em;
+    line-height: 1.5em;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .audio-container .controls .slider {
+    margin-left: 1.333em;
+    margin-right: 1.333em;
+    border-radius: 0.167em;
+    height: 0.333em;
+  }
+  .audio-container .controls .slider .progress {
+    width: 0;
+    height: 100%;
+  }
+  .audio-container .controls .slider .progress .pin {
+    right: -0.667em;
+    top: -0.5em;
+  }
+  .audio-container .controls span {
+    cursor: default;
+  }
+  .audio-container .volume {
+    position: relative;
+  }
+  .audio-container .volume .volume-btn {
+    cursor: pointer;
+    width: 1em;
+  }
+  .audio-container .volume .volume-controls {
+    width: 2.5em;
+    height: 11.25em;
+    background-color: rgba(0, 0, 0, 0.62);
+    border-radius: 0.583em;
+    position: absolute;
+    left: -0.25em;
+    bottom: 4.333em;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .audio-container .volume .volume-controls.hidden {
+    display: none;
+  }
+  .audio-container .volume .volume-controls .slider {
+    margin: 1em;
+    width: 0.5em;
+    border-radius: 0.25em;
+  }
+  .audio-container .volume .volume-controls .slider .progress {
+    bottom: 0;
+    height: 100%;
+    width: 0.5em;
+  }
+  .audio-container .volume .volume-controls .slider .progress .pin {
+    left: -0.417em;
+    top: -0.667em;
+  }
